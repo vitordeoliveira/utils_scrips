@@ -1,0 +1,20 @@
+ANACONDA EXEMPLE
+
+export PATH=/home/yourusername/APP/bin:$PATH
+
+1 Create an empty file on desktop name it anaconda-navigator.desktop
+
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Name=Anaconda
+Version=2.0
+Type=Application
+Exec=/path/to/anaconda3/bin/anaconda-navigator
+Icon=/path/to/anaconda3/lib/pythonVersion/site-packages/anaconda_navigator/static/images/anaconda-icon-256x256.png
+Comment=Open Anaconda Navigator
+Terminal=false
+
+
+cp anaconda-navigator.desktop ~/.local/share/applications/
+
+DONE
